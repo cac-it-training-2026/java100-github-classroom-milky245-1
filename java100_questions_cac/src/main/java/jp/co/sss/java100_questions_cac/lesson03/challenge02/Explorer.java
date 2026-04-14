@@ -44,7 +44,7 @@
  *
  */
 
-package jp.co.sss.java100_questions_cac.lesson03.challenge02;
+package lesson03.challenge02;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -63,7 +63,13 @@ public class Explorer {
 
 
 		//ここにfor文を利用した処理を記述
-
+		for (int i = 3; i > 0; i--) {
+			System.out.println("隊長：");
+			System.out.println("あと" + i + "回！\n");
+			System.out.print("袋に何個入れますか？＞");
+			inputCans += Integer.parseInt(br.readLine());
+			System.out.println();
+		}
 
 		if (inputCans >= targetCans) {
 			System.out.println("\n隊長：");

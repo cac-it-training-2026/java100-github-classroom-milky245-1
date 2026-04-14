@@ -45,7 +45,7 @@
  *
  */
 
-package jp.co.sss.java100_questions_cac.lesson04.challenge08;
+package lesson04.challenge08;
 
 public class WarehouseManager {
 
@@ -56,9 +56,20 @@ public class WarehouseManager {
 
 
 		//ここに重複チェックおよび値の代入処理を記述する①(1～5)
+		//シャッフル　1-5
+		for (int i = 0; i < ABKosanArray1.length; i++) {
+			ABKosanArray1[i] = i + 1;
+		}
+		shuffleArray(ABKosanArray1);
 
 
 		//ここに重複チェックおよび値の代入処理を記述する②(6～10)
+		//シャッフル　6-10
+		for (int i = 0; i < ABKosanArray2.length; i++) {
+			ABKosanArray2[i] = i + 6;
+		}
+
+		shuffleArray(ABKosanArray2);
 
 
 		System.out.println("E主任：");
@@ -114,6 +125,16 @@ public class WarehouseManager {
 			}
 		}
 		System.out.println("\nです。");
+
+	}
+
+	private static void shuffleArray(int[] array) {
+		for (int i = 0; i < array.length; i++) {
+			int randomIndex = (int) (Math.random() * array.length);
+			int temp = array[i];
+			array[i] = array[randomIndex];
+			array[randomIndex] = temp;
+		}
 
 	}
 }

@@ -19,8 +19,18 @@
  *
  */
 
-package jp.co.sss.java100_questions_cac.lesson01.challenge03;
+package lesson01.challenge03;
 
 public class Patisserie {
+    public static void main(String[] args) {
+        int citron = 30;
+        int chocolat = 30;
+        int pistache = 30;
+
+        System.out.println("本日のおすすめ商品です。\n");
+        System.out.printf("シトロン      \\250 ・・・ 残り%d個%n", citron);
+        System.out.printf("ショコラ      \\280 ・・・ 残り%d個%n", chocolat);
+        System.out.printf("ピスターシュ  \\320 ・・・ 残り%d個%n", pistache);
+    }
 
 }
